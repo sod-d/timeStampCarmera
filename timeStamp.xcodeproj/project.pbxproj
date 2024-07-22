@@ -16,7 +16,7 @@
 		8F9072C62BFC6C050003A3D5 /* timeStampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9072C52BFC6C050003A3D5 /* timeStampTests.swift */; };
 		8F9072D02BFC6C050003A3D5 /* timeStampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9072CF2BFC6C050003A3D5 /* timeStampUITests.swift */; };
 		8F9072D22BFC6C050003A3D5 /* timeStampUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9072D12BFC6C050003A3D5 /* timeStampUITestsLaunchTests.swift */; };
-		8FE7AA3A2C09A0F300170DAD /* radio-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7AA392C09A0F300170DAD /* radio-button.png */; };
+		8FA2941E2C32686500F6B0F2 /* gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2941D2C32686500F6B0F2 /* gallery.png */; };
 		8FE7AA3C2C0D642600170DAD /* radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7AA3B2C0D642600170DAD /* radio.png */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		8F9072CB2BFC6C050003A3D5 /* timeStampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timeStampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9072CF2BFC6C050003A3D5 /* timeStampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeStampUITests.swift; sourceTree = "<group>"; };
 		8F9072D12BFC6C050003A3D5 /* timeStampUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeStampUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8FE7AA392C09A0F300170DAD /* radio-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-button.png"; sourceTree = "<group>"; };
+		8FA2941D2C32686500F6B0F2 /* gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallery.png; sourceTree = "<group>"; };
 		8FE7AA3B2C0D642600170DAD /* radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,8 +135,8 @@
 		8FE7AA362C09A0BB00170DAD /* img */ = {
 			isa = PBXGroup;
 			children = (
+				8FA2941D2C32686500F6B0F2 /* gallery.png */,
 				8FE7AA3B2C0D642600170DAD /* radio.png */,
-				8FE7AA392C09A0F300170DAD /* radio-button.png */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -247,9 +247,9 @@
 			files = (
 				8F9072BB2BFC6C050003A3D5 /* LaunchScreen.storyboard in Resources */,
 				8FE7AA3C2C0D642600170DAD /* radio.png in Resources */,
+				8FA2941E2C32686500F6B0F2 /* gallery.png in Resources */,
 				8F9072B82BFC6C050003A3D5 /* Assets.xcassets in Resources */,
 				8F9072B62BFC6C030003A3D5 /* Main.storyboard in Resources */,
-				8FE7AA3A2C09A0F300170DAD /* radio-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

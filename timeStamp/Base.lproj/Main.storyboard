@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bai-OJ-Cu9">
-                                <rect key="frame" x="0.0" y="59" width="393" height="700"/>
+                                <rect key="frame" x="0.0" y="59" width="407" height="700"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFp-aL-gpA">
-                                <rect key="frame" x="176" y="778" width="40" height="40"/>
+                                <rect key="frame" x="176" y="778" width="54" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="LL0-U1-Nfh"/>
-                                    <constraint firstAttribute="width" constant="40" id="wql-8l-3Fc"/>
+                                    <constraint firstAttribute="width" constant="70" id="wql-8l-3Fc"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
@@ -33,22 +33,40 @@
                                     <action selector="capturePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bz-MD-FB9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2O-7U-IkO" userLabel="Callary Btn">
+                                <rect key="frame" x="51" y="778" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BvU-Vg-g7D"/>
+                                    <constraint firstAttribute="width" constant="40" id="riI-tW-gHi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="gallery.png"/>
+                                <connections>
+                                    <action selector="openGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aHt-R0-u7D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xFp-aL-gpA" firstAttribute="leading" secondItem="J2O-7U-IkO" secondAttribute="trailing" constant="83" id="Aif-KT-yTP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xFp-aL-gpA" secondAttribute="trailing" constant="177" id="CK1-jh-dGy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bai-OJ-Cu9" secondAttribute="trailing" id="KcH-3y-TWB"/>
                             <constraint firstItem="xFp-aL-gpA" firstAttribute="top" secondItem="bai-OJ-Cu9" secondAttribute="bottom" constant="19" id="OhS-7K-S3z"/>
                             <constraint firstItem="xFp-aL-gpA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qoy-FM-yYv"/>
+                            <constraint firstItem="J2O-7U-IkO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="WW8-vJ-XXT"/>
                             <constraint firstItem="bai-OJ-Cu9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wlm-Oi-701"/>
+                            <constraint firstItem="J2O-7U-IkO" firstAttribute="top" secondItem="bai-OJ-Cu9" secondAttribute="bottom" constant="19" id="ZGP-14-vB7"/>
                             <constraint firstItem="bai-OJ-Cu9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dPk-e4-89t"/>
                             <constraint firstItem="xFp-aL-gpA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="tDB-24-i5P"/>
+                            <constraint firstAttribute="bottom" secondItem="J2O-7U-IkO" secondAttribute="bottom" constant="32" id="thO-RA-yFS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xFp-aL-gpA" secondAttribute="trailing" constant="177" id="wsX-Id-bqT"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="captureBtn" destination="xFp-aL-gpA" id="Hx1-93-BZM"/>
+                        <outlet property="gallaryBtn" destination="J2O-7U-IkO" id="bIg-Jc-Loo"/>
                         <outlet property="previewView" destination="bai-OJ-Cu9" id="HP3-Vc-qQg"/>
                     </connections>
                 </viewController>
@@ -58,6 +76,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gallery.png" width="192" height="192"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
